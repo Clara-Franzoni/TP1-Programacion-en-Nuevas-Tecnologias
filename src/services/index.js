@@ -3,23 +3,19 @@ export const leerReserva = () => {
   return [
     {
       id: 1,
-      label: 'Las mil y una noches',
-      price: 23
+      label: 'DRAMA'
     },
     {
       id: 2,
-      label: 'Los besos en el pan',
-      price: 25
+      label: 'NATURALEZA'
     },
     {
       id: 3,
-      label: 'Petroleo',
-      price: 34
+      label: 'INFANTIL'
     },
     {
       id: 4,
-      label: 'El principito',
-      price: 23
+      label: 'POLICIAL'
     }
   ]
 }

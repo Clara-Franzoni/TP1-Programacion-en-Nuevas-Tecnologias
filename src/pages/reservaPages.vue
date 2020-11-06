@@ -25,7 +25,7 @@
           transition-next="jump-up"
         >
           <q-tab-panel name="reserva">
-            <reserva> </reserva>
+            <ReservaComponent> </ReservaComponent>
           </q-tab-panel>
 
         </q-tab-panels>
@@ -49,11 +49,11 @@
 
 <script>
 
-import reserva from '../components/reserva'
+import ReservaComponent from '../components/ReservaComponent'
 export default {
   name: 'reserva',
   components: {
-    reserva
+    ReservaComponent
   },
   data () {
     return {

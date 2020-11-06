@@ -25,7 +25,7 @@
           transition-next="jump-up"
         >
           <q-tab-panel name="misreservas">
-            <misReservas> </misReservas>
+            <MisReservasComponent> </MisReservasComponent>
           </q-tab-panel>
 
         </q-tab-panels>
@@ -49,11 +49,11 @@
 
 <script>
 /* eslint-disable vue/no-unused-components */
-import misReservas from '../components/misReservas'
+import MisReservasComponent from '../components/MisReservasComponent'
 export default {
   name: 'misReservas',
   components: {
-    misReservas
+    MisReservasComponent
   },
   data () {
     return {
