@@ -15,7 +15,7 @@
 
       <q-input
         filled
-        v-model="name"
+        v-model="nombre"
         label="Titulo *"
         hint="Name and surname"
         :rules="[ val => val && val.length > 0 || 'Please type something']"
@@ -69,7 +69,7 @@ export default {
   },
   methods: {
     onAgregar: function () {
-      let publicacion = {
+      const publicacion = {
         nombreLibro: this.nombre,
         autor: this.autor,
         precio: this.price,
@@ -77,13 +77,13 @@ export default {
       }
 
       this.$store.dispatch('reserva/' + AGREGAR_RESERVA, publicacion)
+    },
+    onLimpiar: function () {
+      this.reservaElegida = null
+      this.nombreLibro = ''
+      this.autor = ''
+      this.price = 0
     }
-  },
-  onLimpiar: function () {
-    this.reservaElegida = null
-    this.nombreLibro = ''
-    this.autor = ''
-    this.price = 0
   },
   mounted: function () {
     this.reservas = leerReserva()

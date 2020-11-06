@@ -25,7 +25,7 @@
           transition-next="jump-up"
         >
           <q-tab-panel name="reserva">
-            <ReservaComponent> </ReservaComponent>
+            <reserva-component />
           </q-tab-panel>
 
         </q-tab-panels>

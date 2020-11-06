@@ -25,7 +25,7 @@
           transition-next="jump-up"
         >
           <q-tab-panel name="misreservas">
-            <MisReservasComponent> </MisReservasComponent>
+            <mis-reservas-component />
           </q-tab-panel>
 
         </q-tab-panels>
