@@ -1,12 +1,12 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-import reserva from './reserva'
+import publicacion from './publicacion'
 
 Vue.use(Vuex)
 
 export default new Vuex.Store({
   modules: {
-    reserva
+    publicacion
   }
 })

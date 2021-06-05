@@ -1,4 +1,4 @@
-export const leerReserva = () => {
+export const leerPublicacion = () => {
   // En realidad va un fetch/axios
   return [
     {

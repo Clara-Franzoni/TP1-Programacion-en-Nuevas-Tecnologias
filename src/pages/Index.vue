@@ -3,19 +3,21 @@
     <q-btn
         class="q-mt-xl"
         color="white"
+        style="height: 100px"
         text-color="blue"
         unelevated
-        to="/reserva"
-        label="Reservar"
+        to="/publicacion"
+        label="Publicar"
         no-caps
       />
       <q-btn
         class="q-mt-xl"
         color="white"
+        style="height: 100px"
         text-color="red"
         unelevated
-        to="/misReservas"
-        label="Mis reservas"
+        to="/misPublicaciones"
+        label="Mis publicaciones"
         no-caps
       />
   </q-page>

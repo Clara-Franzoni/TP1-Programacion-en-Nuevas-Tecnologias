@@ -8,9 +8,9 @@
     >
 
     <q-select
-          v-model="reservaElegida"
-          :options="reservas"
-          label="Elegi tu reserva"
+          v-model="generoElegido"
+          :options="publicaciones"
+          label="Genero"
         />
 
       <q-input
@@ -54,17 +54,17 @@
 
 <script>
 
-import { leerReserva } from '../services'
-import { AGREGAR_RESERVA } from '../store/reserva/types'
+import { leerPublicacion } from '../services'
+import { AGREGAR_PUBLICACION } from '../store/publicacion/types'
 
 export default {
   data () {
     return {
-      reservaElegida: null,
+      generoElegido: null,
       nombre: '',
       autor: '',
       price: 0,
-      reservas: null
+      publicaciones: null
     }
   },
   methods: {
@@ -73,20 +73,20 @@ export default {
         nombreLibro: this.nombre,
         autor: this.autor,
         precio: this.price,
-        genero: this.reservaElegida
+        genero: this.generoElegido
       }
 
-      this.$store.dispatch('reserva/' + AGREGAR_RESERVA, publicacion)
+      this.$store.dispatch('publicacion/' + AGREGAR_PUBLICACION, publicacion)
     },
     onLimpiar: function () {
-      this.reservaElegida = null
+      this.generoElegido = null
       this.nombreLibro = ''
       this.autor = ''
       this.price = 0
     }
   },
   mounted: function () {
-    this.reservas = leerReserva()
+    this.publicaciones = leerPublicacion()
   }
 }
 </script>

@@ -1,8 +1,8 @@
 <template>
-   <div>
+  <div>
     <q-splitter
       v-model="splitterModel"
-      style="height: 250px"
+      style="height: 450px"
     >
 
       <template v-slot:before>
@@ -11,7 +11,7 @@
           vertical
           class="text-teal"
         >
-          <q-tab name="misreservas" icon="list" label="Ver mis reservas" />
+          <q-tab name="publicacion" icon="shop" label="Publicar" />
         </q-tabs>
       </template>
 
@@ -24,15 +24,15 @@
           transition-prev="jump-up"
           transition-next="jump-up"
         >
-          <q-tab-panel name="misreservas">
-            <mis-reservas-component />
+          <q-tab-panel name="publicacion">
+            <publicacion-component />
           </q-tab-panel>
 
         </q-tab-panels>
       </template>
 
     </q-splitter>
-    <q-page class="flex flex-center">
+<q-page class="flex flex-center">
    <q-btn
         class="q-mt-xl"
         color="white"
@@ -42,22 +42,32 @@
         label="Go Home"
         no-caps
       />
+      <q-btn
+        class="q-mt-xl"
+        color="white"
+        text-color="red"
+        unelevated
+        to="/misPublicaciones"
+        label="Go Home"
+        no-caps
+      />
   </q-page>
+
   </div>
 
 </template>
 
 <script>
-/* eslint-disable vue/no-unused-components */
-import MisReservasComponent from '../components/MisReservasComponent'
+
+import PublicacionComponent from '../components/PublicacionComponent'
 export default {
-  name: 'misReservas',
+  name: 'publicacion',
   components: {
-    MisReservasComponent
+    PublicacionComponent
   },
   data () {
     return {
-      tab: 'misreservas',
+      tab: 'publicacion',
       splitterModel: 20
 
     }

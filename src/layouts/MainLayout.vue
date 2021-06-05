@@ -3,10 +3,10 @@
     <q-header elevated>
       <q-toolbar>
         <q-toolbar-title>
-          Listado de mis reservas
+          Publicaciones
         </q-toolbar-title>
 
-        <div>Reserva Hotel v0.01</div>
+        <div>Pagina de publicaciones v0.01</div>
       </q-toolbar>
     </q-header>
 
